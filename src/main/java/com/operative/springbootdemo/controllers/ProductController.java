@@ -46,7 +46,7 @@ public class ProductController {
         return productList;
     }
 
-    @GetMapping("/products/find/{manufacturer}")
+    @GetMapping("/products/search/{manufacturer}")
     public ArrayList<Product> findByManufacturer(@PathVariable("manufacturer") String manufacturer){
         System.out.println("ProductController:findByManufacturer");
         ArrayList<Product> res = new ArrayList<>();
