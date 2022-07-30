@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
+@RequestMapping("/api")
 public class ProductController {
 
    static ArrayList<Product> productList = new ArrayList<>();
